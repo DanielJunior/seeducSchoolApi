@@ -3,7 +3,7 @@ class School < ApplicationRecord
   after_validation :geocode # auto-fetch coordinates
 
   def full_street_address
-    [address, city, state, country].compact.join(', ')
+    ""
   end
 
   def near_by kilometers
